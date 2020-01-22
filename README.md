@@ -1,4 +1,4 @@
 # alg_num4
 
-Maciej Głowacki
-Yauheni Dzianisau
+#Maciej Głowacki
+#Yauheni Dzianisau
