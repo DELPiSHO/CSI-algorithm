@@ -5,8 +5,8 @@ function initMap() {
   // The following path marks a path from Mt. Whitney, the highest point in the
   // continental United States to Badwater, Death Valley, the lowest point.
   var path = [
-      {lat: 53.77, lng: 20.39}, // Olsztyn
-      {lat: 54.44, lng: 18.53}  // Sopot
+      {lat: 53.12, lng: 18.00}, // Bydgoszcz
+      {lat: 54.35, lng: 18.64}  // Gdańsk
       ];
 
   var elevator = new google.maps.ElevationService();
@@ -53,7 +53,7 @@ function download(elevations) {
     var encodedUri = encodeURI(csvContent);
     var link = document.createElement("a");
     link.setAttribute("href", encodedUri);
-    link.setAttribute("download", "olsztyn-sopot.csv");
+    link.setAttribute("download", "bydgoszcz-gdansk.csv");
     document.body.appendChild(link);
 
     link.click();
