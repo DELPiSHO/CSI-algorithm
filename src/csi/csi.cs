@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Text;
 
 namespace csi
@@ -87,6 +88,18 @@ namespace csi
             for (double x = start; x < stop; x += jump)
             {
                 Console.WriteLine(new Node(x, S(x)));
+            }
+        }
+
+        public void SaveToFile(int i, string fileName)
+        {
+            var start = Nodes[0].x;
+            var stop = Nodes[Nodes.Count - 1].x;
+            var jump = (stop - start) / i;
+
+            for (double x = start; x < stop; x += jump)
+            {
+                File.AppendAllText(@$"C:\TEST4\{fileName}.txt", (S(x) + "\n"));
             }
         }
 
