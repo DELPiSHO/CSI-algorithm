@@ -2,8 +2,7 @@
 google.load('visualization', '1', {packages: ['columnchart']});
 
 function initMap() {
-  // The following path marks a path from Mt. Whitney, the highest point in the
-  // continental United States to Badwater, Death Valley, the lowest point.
+  
   var path = [
       {lat: 53.12, lng: 18.00}, // Bydgoszcz
       {lat: 54.35, lng: 18.64}  // Gdańsk
