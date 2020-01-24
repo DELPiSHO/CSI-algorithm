@@ -21,9 +21,12 @@ namespace csi
 			Matrix current = new Matrix(Vector.rows, 1);
 
 			double value;
+            int iterations = 0;
+
 
 			do
 			{
+                iterations++;
 				for (int i = 0; i < Matrix.rows; i++)
 				{
 					double sum = 0;

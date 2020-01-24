@@ -129,6 +129,8 @@ namespace csi
             Matrix.values[Matrix.rows - 1, Matrix.rows - 1] = 2;
         }
 
+
+
         public void SetMVectorFromGaussElimination()
         {
             MVector = new GaussianElimination().EliminationPG(Matrix, Vector);
@@ -142,6 +144,10 @@ namespace csi
         public void SetMVectorFromJacobi()
         {
             MVector = new Jacobi(Matrix, Vector).Calculate();
+        }
+        public void SetMVectorFromGaussSeidelSparse()
+        {
+            MVector = new GaussSeidelSparse(Matrix, Vector).Calculate();
         }
     }
 }
